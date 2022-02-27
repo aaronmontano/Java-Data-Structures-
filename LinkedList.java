@@ -1,8 +1,6 @@
-// TODO Change method syntax standard from method() to method ().
-
 public class LinkedList {
 
-    public Node head;
+    public Node head; /**< Head of LinkedList. */
 
     /**
      * @brief Default constructor for a LinkedList.
@@ -13,8 +11,8 @@ public class LinkedList {
      *
      * //TODO For default constructor, set this.head = null.
      */
-    public LinkedList() {
-        this.head = new Node();
+    public LinkedList () {
+        this.head = null;
         this.head.setData(0);
     }
 
@@ -25,9 +23,9 @@ public class LinkedList {
      *
      * @return Parameterized LinkedList instance.
      */
-    public LinkedList(int initialData) {
-        this.head = new Node(initialData);
-        this.head.setData(initialData);
+    public LinkedList (int initialData) {
+        this.head = new Node (initialData);
+        this.head.setData (initialData);
     }
 
     /**
@@ -39,12 +37,12 @@ public class LinkedList {
      *
      * // TODO Create a case in which this.head is set to null.
      */
-    public void add(int newData) {
+    public void add (int newData) {
         Node currNode = this.head;
         while (currNode.next != null) {
             currNode = currNode.next;
         }
-        currNode.next = new Node(newData);
+        currNode.next = new Node (newData);
     }
 
     /**
@@ -54,8 +52,8 @@ public class LinkedList {
      *
      * @return NONE
      */
-    public void addFirst(int newData) {
-        Node newNode = new Node(newData);
+    public void addFirst (int newData) {
+        Node newNode = new Node (newData);
         if (this.head != null) newNode.next = this.head;
         this.head = newNode;
     }
@@ -67,7 +65,7 @@ public class LinkedList {
      *
      * @return NONE
      */
-    public void addLast(int newData) {
+    public void addLast (int newData) {
         Node newNode = new Node(newData);
         Node currNode = this.head;
         if (this.head == null) this.head = newNode;
@@ -84,7 +82,7 @@ public class LinkedList {
      *
      * @return NONE
      */
-    public void removeFirst() {
+    public void removeFirst () {
         this.head = this.head == null ? null : this.head.next;
     }
 
@@ -93,7 +91,7 @@ public class LinkedList {
      *
      * @return NONE
      */
-    public void removeLast() {
+    public void removeLast () {
         if (this.head != null) {
             if (this.head.next == null) {
                 this.head = null;
@@ -114,15 +112,15 @@ public class LinkedList {
      *
      * @return NONE (values will be printed to the standard output on a single line).
      */
-    public void printList() {
+    public void printList () {
         Node currNode = this.head;
 
         System.out.print("[ ");
         while (currNode != null) {
-            System.out.print(currNode.getData() + " ");
+            System.out.print (currNode.getData() + " ");
             currNode = currNode.next;
         }
-        System.out.print("]\n");
+        System.out.print ("]\n");
     }
 
 }

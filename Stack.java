@@ -24,4 +24,42 @@ public class Stack {
         this.stackData = new LinkedList (initialData);
     }
 
+    /**
+     * @brief Push data value to stop of Stack.
+     *
+     * @param val - Value to be pushed.
+     *
+     * @return NONE
+     */
+    public void push (int val) {
+        this.stackData.addFirst (val);
+    }
+
+    /**
+     * @brief Pop off top data value from Stack.
+     *
+     * @param NONE
+     *
+     * @return topVal - Data value at top of Stack.
+     * TODO: Take into account when the Stack is empty / null.
+     */
+    public int pop () {
+        int topVal = this.stackData.head.getData ();
+        this.stackData.removeFirst ();
+        return topVal;
+    }
+
+    /**
+     * @brief Peek at data at the top of Stack.
+     *
+     * @param NONE
+     *
+     * @return topVal - Data value at top of Stack.
+     * TODO: Take into account when the Stack is empty / null.
+     */
+    public int peek () {
+        int topVal = this.stackData.head.getData ();
+        return topVal;
+    }
+
 }
