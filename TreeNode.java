@@ -52,7 +52,7 @@ public class TreeNode {
      * @return NONE
      */
     public void setData (int initialData) {
-        this.data = initalData;
+        this.data = initialData;
     }
 
 }

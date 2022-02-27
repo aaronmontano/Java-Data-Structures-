@@ -1,6 +1,6 @@
 public class BinaryTree {
 
-    public TreeNode root;
+    public TreeNode root; /**< Root TreeNode of BinaryTree. */
 
     /**
      * @brief Default constructor for a BinaryTree.
@@ -22,7 +22,7 @@ public class BinaryTree {
      * @return Parameterized BinaryTree instance.
      */
     public BinaryTree (int initialData) {
-        this.head = new TreeNode (initialData);
+        this.root = new TreeNode (initialData);
     }
 
 }
