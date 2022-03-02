@@ -32,7 +32,24 @@ public class Queue {
      * @return NONE
      */
     public void add (int newData) {
-        this.queueData.addLast (newData);
+        this.queueData.addFirst (newData);
+    }
+
+    /**
+     * @brief Remove data from front of Queue.
+     *
+     * @param NONE
+     *
+     * @return NONE
+     */
+    public int remove () throws NullNodeException {
+        if (this.queueData.head == null) {
+            throw new NullNodeException("Head is null. ");
+        } else {
+            int retVal = this.queueData.head.getData();
+            this.queueData.removeFirst();
+            return retVal;
+        }
     }
 
 }
