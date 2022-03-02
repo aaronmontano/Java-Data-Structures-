@@ -1,0 +1,10 @@
+digraph "Node.Node"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Node.Node",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Default constructor for Node."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Node.addNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_node.html#ad89caa636489896990023abd9c65bc97",tooltip="Given a Node instance, set pointer to a new Node."];
+}

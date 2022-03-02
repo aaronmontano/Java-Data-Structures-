@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['java_2ddata_2dstructures_2d_0',['Java-Data-Structures-',['../md__r_e_a_d_m_e.html',1,'']]]
+  ['data_0',['data',['../class_tree_node.html#afdb2339c21d9d7a1ae6d13c94d16e8fc',1,'TreeNode']]]
 ];

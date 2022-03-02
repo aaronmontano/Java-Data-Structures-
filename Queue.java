@@ -24,4 +24,15 @@ public class Queue {
         this.queueData = new LinkedList (initialData);
     }
 
+    /**
+     * @brief Add data to Queue.
+     *
+     * @param newData - Data to be added to Queue.
+     *
+     * @return NONE
+     */
+    public void add (int newData) {
+        this.queueData.addLast (newData);
+    }
+
 }

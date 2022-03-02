@@ -1,0 +1,10 @@
+digraph "Stack.peek"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Stack.peek",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Peek at data at the top of Stack."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Node.getData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_node.html#a163c20ed7c6533f185ad0c75f7e0e6c3",tooltip="Retrieves data of Node instance."];
+}

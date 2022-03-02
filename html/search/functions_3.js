@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['node_0',['Node',['../class_node.html#a989164b636cfeff98b4df9833976f4f5',1,'Node.Node()'],['../class_node.html#a1dd4e5647be5c467145b012ae9458065',1,'Node.Node(int data)']]]
+  ['linkedlist_0',['LinkedList',['../class_linked_list.html#ac53cccc06e6b1524dca7ab1afc368628',1,'LinkedList.LinkedList()'],['../class_linked_list.html#a4a59666c3ff2d7b00a2ab6f19e304bed',1,'LinkedList.LinkedList(int initialData)']]]
 ];

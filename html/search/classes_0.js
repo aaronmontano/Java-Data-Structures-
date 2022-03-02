@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['linkedlist_0',['LinkedList',['../class_linked_list.html',1,'']]]
+  ['binarytree_0',['BinaryTree',['../class_binary_tree.html',1,'']]]
 ];
